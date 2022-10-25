@@ -7,6 +7,7 @@ const StuffItemAdmin = ({ stuff }) => (
     <td>{stuff.name}</td>
     <td>{stuff.quantity}</td>
     <td>{stuff.condition}</td>
+    <td>{stuff.value}</td>
     <td>{stuff.owner}</td>
   </tr>
 );
@@ -17,6 +18,7 @@ StuffItemAdmin.propTypes = {
     name: PropTypes.string,
     quantity: PropTypes.number,
     condition: PropTypes.string,
+    value: PropTypes.number,
     _id: PropTypes.string,
     owner: PropTypes.string,
   }).isRequired,
